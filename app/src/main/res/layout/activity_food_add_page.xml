@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodAddPage">
+
+    <Button
+        android:id="@+id/foodAddSaveButton"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginBottom="52dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toEndOf="@+id/foodAddCancelButton" />
+
+    <Button
+        android:id="@+id/foodAddCancelButton"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/foodAddNotesInput"
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Current Notes"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodAddStallInput" />
+
+    <EditText
+        android:id="@+id/foodAddStallInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Current Stall"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodAddPriceInput" />
+
+    <EditText
+        android:id="@+id/foodAddTitleInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Current Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodAddImage" />
+
+    <EditText
+        android:id="@+id/foodAddPriceInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Current Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodAddTitleInput" />
+
+    <ImageView
+        android:id="@+id/foodAddImage"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodAddLabel"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/foodAddLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Food Item"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

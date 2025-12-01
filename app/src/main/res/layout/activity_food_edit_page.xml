@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodEditPage">
+
+    <TextView
+        android:id="@+id/foodEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Edit Food Item"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/foodEditImage"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditLabel"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/foodEditTitleInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Title/Name"
+        android:inputType="text"
+        android:text="Current Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditImage" />
+
+    <EditText
+        android:id="@+id/foodEditPriceInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:text="Current Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditTitleInput" />
+
+    <EditText
+        android:id="@+id/foodEditStallInput"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Stall"
+        android:inputType="text"
+        android:text="Current Stall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditPriceInput" />
+
+    <EditText
+        android:id="@+id/foodEditNotesInput"
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        android:text="Current Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditStallInput" />
+
+    <Button
+        android:id="@+id/foodEditCancelButton"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/foodEditSaveButton"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginBottom="52dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toEndOf="@+id/foodEditCancelButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
